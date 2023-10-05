@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kema">
+    <meta name="description" content="Feedback form for the Little Taco Shop">
+
+    <title>Contact Us - LTS</title>
+
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="icon" href="img/taco-16.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="img/taco-40.png" type="image/png" sizes="40x40">
+    <link rel="icon" href="img/taco-80.png" type="image/png" sizes="80x80">
+    <link rel="stylesheet" href="main.css">
+
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+<header class="contact__header">
+    <section class="header">
+        <h1 class="header__h1">Little Taco Shop</h1>
+
+        <nav aria-label="contact-navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#menu">Menu</a></li>
+                <li><a href="hours.html">Hours</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section class="contact__hero hero">
+        <figure>
+            <img class="contact__img" src="img/taco_contact.jpg" alt="Our Shop" title="Our Shop" width="640" height="569">
+            <figcaption class="offscreen">Little Taco Shop Store</figcaption>
+        </figure>
+    </section>
+</header>
+<main class="contact__main">
+    <article class="main__article contact" id="main__location">
+        <h2>Our Location</h2>
+        <address>
+            <p>555 Taco Temptation Lame, Suite T</p>
+            <p>Kansas City, MO 55555-55555</p>
+        </address>
+        <p><i>Phone: <a href="tel:5555555555">555-555-5555</a></i></p>
+    </article>
+    <hr>
+    <article class="main__article contact" id="main__contact_form">
+        <h2 class="contact__h2">Our Contact Form</h2>
+
+        <form class="contact__form" action="https://httpbin.org/get" method="get">
+            <fieldset class="contact__fieldset">
+                <legend class="offscreen">Send Us A Message</legend>
+                <p class="contact__p">
+                    <label class="contact__label" for="name">Name:</label>
+                    <input class="contact__input" type="text" name="name" id="name" placeholder="your name" required>
+                </p>
+                <p class="contact__p">
+                    <label class="contact__label" for="email">Email:</label>
+                    <input class="contact__input" type="email" name="email" id="email" placeholder="your email" required>
+                </p>
+                <p class="contact__p">
+                    <label class="contact__label" for="message">Your message:</label>
+                    <textarea class="contact__textarea" name="message" id="message" cols="40" rows="10" placeholder="Type your message here"
+                                required></textarea>
+                </p>
+            </fieldset>
+            <input class="contact__btn" type="submit" formaction="https://httpbin.org/post" formmethod="post" value="Send">
+            <input class="contact__btn" type="reset" value="Reset">
+        </form>
+    </article>
+    <p class="center"><a href="#">Back to Top</a></p>
+</main>
+<footer class="footer">
+    <p>
+        <span class="nowrap">Copyright &copy <time id="year"></time></span>
+        <span class="nowrap">Little Taco Shop</span>
+    </p>
+</footer>
+</body>
+</html>
