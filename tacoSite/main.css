@@ -54,7 +54,7 @@ input, button, textarea {
     --margin: clamp(1em, 2.5vh, 1.5em) 0;
 }
 
-@media (prefers-color-scheme: any) {
+@media (prefers-color-scheme: dark) or (prefers-color-scheme: light) {
     :root {
         --bg-body: #1d1d1f;
         --bg-color: #2e3631;
